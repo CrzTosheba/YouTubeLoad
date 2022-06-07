@@ -30,7 +30,7 @@ namespace YouTubeLoad
             var progress = new Progress<double>();
             progress.ProgressChanged += (s, e) => Debug.WriteLine($"Загружено: {e:P2}");
 
-            await youtube.Videos.Streams.DownloadAsync(streamInfo, $"video.{streamInfo.Container}", progress);
+            await youtube.Videos.Streams.DownloadAsync(streamInfo, $"E:/Education/Video.{streamInfo.Container}", progress);
             Console.ReadLine();
             return 0;
             
